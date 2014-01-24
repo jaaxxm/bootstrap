@@ -29,8 +29,9 @@ module.exports = function(opts) {
     modules: modules,
     templates: templates,
     globs: {
-      //We add an underscore to all these expansions because glob {} expansions don't work if there
-      //is only one item. The _ just makes there be two items so expansion works
+      //We add an underscore to all these expansions because glob {} expansions don't work if
+      //the modules array contains only one item. The _ just makes there be at least
+      //two items so expansion works
       js: 'src/{_,'+modules+'}/*.js',
       docs: 'src/{_,'+modules+'}/docs/**/*',
       html: 'template/{_,'+modules+'}/*.html',
@@ -52,7 +53,7 @@ module.exports = function(opts) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'misc/test-lib/helpers.js',
-      'src/{'+modules+'}/*.js',
+      'src/{'+modules+'}/**/*.js',
       'template/{'+modules+'}/*.html'
     ]
   };
@@ -68,10 +69,4 @@ function readTemplates(modules) {
     }
   });
   return templates;
-}
-function enquote(str) {
-  return '"' + str + '"';
-}
-function uiBootstrapPrefix(str) {
-  return enquote('ui.bootstrap.' + str);
 }

@@ -1,0 +1,9 @@
+{
+  "name": "bootstrap-dev-private",
+  "private": "true",
+  "devDependencies": {
+    "angular": "1.2.8",
+    "angular-mocks": "1.2.8",
+    "jquery": "1.8.2"
+  }
+}

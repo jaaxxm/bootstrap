@@ -52,9 +52,9 @@ module.exports = function(opts) {
       'bower_components/jquery/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'misc/test-lib/helpers.js',
-      'src/{'+modules+'}/**/*.js',
-      'template/{'+modules+'}/*.html'
+      'test/test-helpers.js',
+      'src/{_,'+modules+'}/**/*.js',
+      'template/{_,'+modules+'}/*.html'
     ]
   };
 };

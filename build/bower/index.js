@@ -43,7 +43,6 @@ function buildBowerModule(gulp, module, callback) {
     bundleModule: '\n',
     htmlModule: '\n'
   });
-  var ghOwner = 'ui-bootstrap-bower-test';
   var repo = bowerName(module);
   var github = 'git@github.com:'+ghOwner+'/'+repo;
 

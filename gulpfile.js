@@ -23,7 +23,7 @@ gulp.task('bower', function(callback) {
 });
 
 gulp.task('test', function(done) {
-  return gulp.src(config.testFiles)
+  return gulp.src(defaultConfig.testFiles)
     .pipe(karma({
       configFile: 'karma.conf.js',
       action: 'run'
@@ -31,7 +31,7 @@ gulp.task('test', function(done) {
 });
 
 gulp.task('watch', function() {
-  return gulp.src(config.testFiles)
+  return gulp.src(defaultConfig.testFiles)
     .pipe(karma({
       configFile: 'karma.conf.js',
       action: 'watch'

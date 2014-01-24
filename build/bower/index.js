@@ -91,6 +91,7 @@ function buildBowerModule(gulp, module, callback) {
 function checkModuleRemote(module, done) {
   cp.exec('git ls-remote git://github.com/'+ghOwner+'/'+bowerName(module), done);
 }
+
 function tellUserReposMissing(repos) {
   var missingStr = repos.map(function(module) {
     return '  * ' + gutil.colors.red(module) + ': ' +

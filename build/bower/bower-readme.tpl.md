@@ -1,7 +1,7 @@
 
 ## bootstrap-bower-<%= module %>
 
-This is the bower repository for the accordion <%= module %> component of of the [angular-ui/bootstrap project](https://github.com/angular-ui/bootstrap) project.
+This is the bower repository for the <%= module %> component of of the [angular-ui/bootstrap project](https://github.com/angular-ui/bootstrap) project.
 
 ### Usage
 

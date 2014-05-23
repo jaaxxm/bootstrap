@@ -508,7 +508,6 @@ angular.module('ui.bootstrap.collapse', ['ui.bootstrap.transition'])
         function expandDone() {
           element.removeClass('collapsing');
           element.addClass('collapse in');
-          element.css({height: 'auto'});
         }
 
         function collapse() {
